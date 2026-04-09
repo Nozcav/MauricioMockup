@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arias Shop</title>
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<div class="top-announcement">
+        Envío gratis en compras superiores a $50.000
+    </div>
+
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <img src="img/logo.png" alt="Arias Shop logo">
+                <span>Arias Shop</span>
+            </div>
+        </div>
+        <div class="header-center">
+            <div class="search-bar">
+                <input type="search" placeholder="Buscar productos..." aria-label="Buscar productos">
+                <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <div class="header-right">
+            <a href="carrito.html" class="icon-link">
+                <div class="icon-button" aria-label="Carrito de compras">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </a>
+            <a href="cuenta.html" class="icon-link">
+                <div class="icon-button" aria-label="Usuario">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <!-- CONTENIDO VARIABLE (Aquí cambias todo según la página) -->
+<main class="container carrito-page">
+  <h1 class="carrito-titulo">Carrito de Compras</h1>
+
+  <div class="carrito-layout">
+    <section class="carrito-productos">
+      <div class="cuadro-blanco">
+        <div class="carrito-header-lista">
+          <h3>Productos (3)</h3>
+        </div>
+
+        <article class="carrito-item">
+          <div class="item-img">
+            <img src="img/reloj.webp" alt="Chaqueta de Cuero">
+          </div>
+          <div class="item-detalles">
+            <h4>Chaqueta de Cuero Premium</h4>
+            <p>Talla: M</p>
+            <p>Color: Negro</p>
+            <span class="item-precio">$289.000</span>
+          </div>
+          <div class="item-acciones">
+            <button class="btn-eliminar" title="Eliminar"><i class="fas fa-trash"></i></button>
+            <div class="selector-cantidad">
+              <button>-</button>
+              <input type="number" value="1">
+              <button>+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="carrito-item">
+          <div class="item-img">
+            <img src="img/reloj.webp" alt="Zapatillas">
+          </div>
+          <div class="item-detalles">
+            <h4>Zapatillas Deportivas</h4>
+            <p>Talla: 42</p>
+            <p>Color: Blanco</p>
+            <span class="item-precio">$159.000</span>
+          </div>
+          <div class="item-acciones">
+            <button class="btn-eliminar" title="Eliminar"><i class="fas fa-trash"></i></button>
+            <div class="selector-cantidad">
+              <button>-</button>
+              <input type="number" value="2">
+              <button>+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="carrito-item">
+          <div class="item-img">
+            <img src="img/reloj.webp" alt="Mochila">
+          </div>
+          <div class="item-detalles">
+            <h4>Mochila Urbana</h4>
+            <p>Talla: Única</p>
+            <p>Color: Gris</p>
+            <span class="item-precio">$89.000</span>
+          </div>
+          <div class="item-acciones">
+            <button class="btn-eliminar" title="Eliminar"><i class="fas fa-trash"></i></button>
+            <div class="selector-cantidad">
+              <button>-</button>
+              <input type="number" value="1">
+              <button>+</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <aside class="carrito-resumen">
+      <div class="cuadro-blanco">
+        <h3>Resumen del Pedido</h3>
+        
+        <div class="resumen-linea">
+          <span>Subtotal</span>
+          <span>$696.000</span>
+        </div>
+        <div class="resumen-linea">
+          <span>Envío</span>
+          <span class="texto-verde">Gratis</span>
+        </div>
+        <div class="resumen-linea">
+          <span>IVA (19%)</span>
+          <span>$132.240</span>
+        </div>
+
+        <hr class="separador">
+
+        <div class="resumen-linea total">
+          <span>Total</span>
+          <span>$828.240</span>
+        </div>
+
+        <button class="btn-negro btn-checkout">Proceder al Pago</button>
+        
+        <p class="pago-leyenda">Aceptamos todos los métodos de pago</p>
+        <div class="pago-metodos">
+          <span class="badge-pago">VISA</span>
+          <span class="badge-pago">MC</span>
+          <span class="badge-pago">PSE</span>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+      <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Sobre Nosotros</h4>
+                <ul>
+                    <li><a href="misionVision.html">Nuestra Historia</a></li>
+                    <li><a href="misionVision.html">Misión y Visión</a></li>
+                    <li><a href="contactanos.html">Trabaja con Nosotros</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Ayuda</h4>
+                <ul>
+                    <li><a href="preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+                    <li><a href="devoluciones.html">Política de Devoluciones</a></li>
+                    <li><a href="contactanos.html">Métodos de Pago</a></li>
+                    <li><a href="contactanos.html">Envíos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p><i class="fa-solid fa-envelope"></i> info@shop.com</p>
+                <p><i class="fa-solid fa-phone"></i> +57 313 217 8424</p>
+                <p><i class="fa-solid fa-clock"></i> Lun - Vie, 9AM - 6PM</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Suscríbete para recibir ofertas exclusivas</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Tu email" aria-label="Tu email">
+                    <button type="button"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

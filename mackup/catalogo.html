@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo | Arias Shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+
+  <div class="top-announcement">
+    Envío gratis en compras superiores a $50.000
+  </div>
+
+  <header>
+    <div class="header-left">
+      <div class="logo">
+        <img src="img/logo.png" alt="Arias Shop logo">
+        <span>Arias Shop</span>
+      </div>
+    </div>
+
+    <div class="header-center">
+      <div class="search-bar">
+        <input type="search" placeholder="Buscar productos..." aria-label="Buscar productos">
+        <button type="button" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </div>
+
+    <div class="header-right">
+      <a href="carrito.html" aria-label="Ir al carrito">
+        <div class="icon-button" aria-hidden="true">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+      </a>
+      <a href="cuenta.html" aria-label="Ir a mi cuenta">
+        <div class="icon-button" aria-hidden="true">
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <main class="container catalogo-page">
+    <div class="catalogo-header">
+      <div>
+        <h1>Catálogo</h1>
+        <p><i class="fa-solid fa-box-archive"></i> 10 productos encontrados</p>
+      </div>
+
+      <div class="ordenar-por">
+        <label><i class="fa-solid fa-arrow-down-short-wide"></i> Ordenar:</label>
+        <select aria-label="Ordenar productos">
+          <option value="relevantes">Más Relevantes</option>
+          <option value="menor-precio">Menor Precio</option>
+          <option value="mayor-precio">Mayor Precio</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="catalogo-layout">
+      <aside class="filtros-sidebar">
+        <div class="filtro-box">
+          <h3><i class="fa-solid fa-sliders"></i> Filtros</h3>
+
+          <div class="filtro-grupo">
+            <h4><i class="fa-solid fa-tags"></i> Precio</h4>
+            <input type="range" min="0" max="500000" value="400000" class="slider-precio" aria-label="Rango de precio">
+            <div class="precio-rango"><span>$0</span><span>$500.000</span></div>
+          </div>
+
+          <div class="filtro-grupo">
+            <h4><i class="fa-solid fa-copyright"></i> Marca</h4>
+            <label><input type="checkbox" name="marca" value="nike"> Nike</label>
+            <label><input type="checkbox" name="marca" value="adidas"> Adidas</label>
+            <label><input type="checkbox" name="marca" value="zara"> Zara</label>
+            <label><input type="checkbox" name="marca" value="levis"> Levi's</label>
+          </div>
+
+          <div class="filtro-grupo">
+            <h4><i class="fa-solid fa-ruler-combined"></i> Talla</h4>
+            <div class="tallas-grid">
+              <button class="talla-btn" type="button">XS</button>
+              <button class="talla-btn" type="button">S</button>
+              <button class="talla-btn active" type="button">M</button>
+              <button class="talla-btn" type="button">L</button>
+              <button class="talla-btn" type="button">XL</button>
+            </div>
+          </div>
+
+          <div class="filtro-grupo">
+            <h4><i class="fa-solid fa-palette"></i> Color</h4>
+            <div class="colores-flex" role="list">
+              <button class="color-circulo" style="background: #000;" title="Negro" aria-label="Negro"></button>
+              <button class="color-circulo" style="background: #fff; border: 1px solid #ddd;" title="Blanco" aria-label="Blanco"></button>
+              <button class="color-circulo" style="background: #ff0000;" title="Rojo" aria-label="Rojo"></button>
+              <button class="color-circulo" style="background: #0000ff;" title="Azul" aria-label="Azul"></button>
+            </div>
+          </div>
+
+          <button class="btn-negro btn-aplicar" type="button">
+            <i class="fa-solid fa-check"></i> Aplicar Filtros
+          </button>
+        </div>
+      </aside>
+
+      <section class="productos-grid" aria-live="polite">
+        <!-- Producto 1 -->
+        <article class="producto-card">
+          <div class="producto-imagen" role="img" aria-label="Imagen Chaqueta Cuero Premium">
+            <span class="badge-descuento">-20%</span>
+            <img src="img/reloj.webp" alt="Chaqueta Cuero Premium">
+            <button class="quick-view" aria-label="Vista rápida Chaqueta Cuero Premium"><i class="fa-solid fa-eye"></i></button>
+          </div>
+          <div class="producto-info">
+            <h3>Chaqueta Cuero Premium</h3>
+            <div>
+              <span class="precio-actual">$289.000</span>
+            </div>
+            <button class="btn-agregar" type="button" aria-label="Agregar Chaqueta Cuero Premium">
+              <i class="fa-solid fa-plus" aria-hidden="true"></i> Agregar
+            </button>
+          </div>
+        </article>
+
+        <!-- Producto 2 -->
+        <article class="producto-card">
+          <div class="producto-imagen" role="img" aria-label="Imagen Zapatillas Running">
+            <img src="img/reloj.webp" alt="Zapatillas Running">
+            <button class="quick-view" aria-label="Vista rápida Zapatillas Running"><i class="fa-solid fa-eye"></i></button>
+          </div>
+          <div class="producto-info">
+            <h3>Zapatillas Running</h3>
+            <div>
+              <span class="precio-actual">$159.000</span>
+            </div>
+            <button class="btn-agregar" type="button" aria-label="Agregar Zapatillas Running">
+              <i class="fa-solid fa-plus" aria-hidden="true"></i> Agregar
+            </button>
+          </div>
+        </article>
+
+        <!-- Producto 3 -->
+        <article class="producto-card">
+          <div class="producto-imagen" role="img" aria-label="Imagen Reloj Cuarzo">
+            <img src="img/reloj.webp" alt="Reloj Cuarzo">
+          </div>
+          <div class="producto-info">
+            <h3>Reloj Cuarzo</h3>
+            <div>
+              <span class="precio-actual">$199.000</span>
+            </div>
+            <button class="btn-agregar" type="button" aria-label="Agregar Reloj Cuarzo">
+              <i class="fa-solid fa-plus" aria-hidden="true"></i> Agregar
+            </button>
+          </div>
+        </article>
+
+        <!-- Producto 4 -->
+        <article class="producto-card">
+          <div class="producto-imagen" role="img" aria-label="Imagen Jeans Slim Fit">
+            <span class="badge-descuento">Oferta</span>
+            <img src="img/reloj.webp" alt="Jeans Slim Fit">
+          </div>
+          <div class="producto-info">
+            <h3>Jeans Slim Fit</h3>
+            <div>
+              <span class="precio-actual">$120.000</span>
+            </div>
+            <button class="btn-agregar" type="button" aria-label="Agregar Jeans Slim Fit">
+              <i class="fa-solid fa-plus" aria-hidden="true"></i> Agregar
+            </button>
+          </div>
+        </article>
+
+                <!-- Producto 5 -->
+        <article class="producto-card">
+          <div class="producto-imagen" role="img" aria-label="Imagen Jeans Slim Fit">
+            <span class="badge-descuento">Oferta</span>
+            <img src="img/reloj.webp" alt="Jeans Slim Fit">
+          </div>
+          <div class="producto-info">
+            <h3>Jeans Slim Fit</h3>
+            <div>
+              <span class="precio-actual">$120.000</span>
+            </div>
+            <button class="btn-agregar" type="button" aria-label="Agregar Jeans Slim Fit">
+              <i class="fa-solid fa-plus" aria-hidden="true"></i> Agregar
+            </button>
+          </div>
+        </article>
+
+                <!-- Producto 6 -->
+        <article class="producto-card">
+          <div class="producto-imagen" role="img" aria-label="Imagen Jeans Slim Fit">
+            <span class="badge-descuento">Oferta</span>
+            <img src="img/reloj.webp" alt="Jeans Slim Fit">
+          </div>
+          <div class="producto-info">
+            <h3>Jeans Slim Fit</h3>
+            <div>
+              <span class="precio-actual">$120.000</span>
+            </div>
+            <button class="btn-agregar" type="button" aria-label="Agregar Jeans Slim Fit">
+              <i class="fa-solid fa-plus" aria-hidden="true"></i> Agregar
+            </button>
+          </div>
+        </article>
+
+                <!-- Producto 7 -->
+        <article class="producto-card">
+          <div class="producto-imagen" role="img" aria-label="Imagen Jeans Slim Fit">
+            <span class="badge-descuento">Oferta</span>
+            <img src="img/reloj.webp" alt="Jeans Slim Fit">
+          </div>
+          <div class="producto-info">
+            <h3>Jeans Slim Fit</h3>
+            <div>
+              <span class="precio-actual">$120.000</span>
+            </div>
+            <button class="btn-agregar" type="button" aria-label="Agregar Jeans Slim Fit">
+              <i class="fa-solid fa-plus" aria-hidden="true"></i> Agregar
+            </button>
+          </div>
+        </article>
+
+                <!-- Producto 8 -->
+        <article class="producto-card">
+          <div class="producto-imagen" role="img" aria-label="Imagen Jeans Slim Fit">
+            <span class="badge-descuento">Oferta</span>
+            <img src="img/reloj.webp" alt="Jeans Slim Fit">
+          </div>
+          <div class="producto-info">
+            <h3>Jeans Slim Fit</h3>
+            <div>
+              <span class="precio-actual">$120.000</span>
+            </div>
+            <button class="btn-agregar" type="button" aria-label="Agregar Jeans Slim Fit">
+              <i class="fa-solid fa-plus" aria-hidden="true"></i> Agregar
+            </button>
+          </div>
+        </article>
+
+                <!-- Producto 9 -->
+        <article class="producto-card">
+          <div class="producto-imagen" role="img" aria-label="Imagen Jeans Slim Fit">
+            <span class="badge-descuento">Oferta</span>
+            <img src="img/reloj.webp" alt="Jeans Slim Fit">
+          </div>
+          <div class="producto-info">
+            <h3>Jeans Slim Fit</h3>
+            <div>
+              <span class="precio-actual">$120.000</span>
+            </div>
+            <button class="btn-agregar" type="button" aria-label="Agregar Jeans Slim Fit">
+              <i class="fa-solid fa-plus" aria-hidden="true"></i> Agregar
+            </button>
+          </div>
+        </article>
+
+                <!-- Producto 10 -->
+        <article class="producto-card">
+          <div class="producto-imagen" role="img" aria-label="Imagen Jeans Slim Fit">
+            <span class="badge-descuento">Oferta</span>
+            <img src="img/reloj.webp" alt="Jeans Slim Fit">
+          </div>
+          <div class="producto-info">
+            <h3>Jeans Slim Fit</h3>
+            <div>
+              <span class="precio-actual">$120.000</span>
+            </div>
+            <button class="btn-agregar" type="button" aria-label="Agregar Jeans Slim Fit">
+              <i class="fa-solid fa-plus" aria-hidden="true"></i> Agregar
+            </button>
+          </div>
+        </article>
+
+        <!-- Puedes duplicar y adaptar las tarjetas anteriores para los demás productos -->
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Sobre Nosotros</h4>
+        <ul>
+          <li><a href="nosotros.html">Nuestra Historia</a></li>
+          <li><a href="nosotros.html">Misión y Visión</a></li>
+          <li><a href="#">Trabaja con Nosotros</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Ayuda</h4>
+        <ul>
+          <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+          <li><a href="devoluciones.html">Política de Devoluciones</a></li>
+          <li><a href="#">Métodos de Pago</a></li>
+          <li><a href="#">Envíos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <p><i class="fa-solid fa-envelope"></i> info@shop.com</p>
+        <p><i class="fa-solid fa-phone"></i> +57 313 217 8424</p>
+        <p><i class="fa-solid fa-clock"></i> Lun - Vie, 9AM - 6PM</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>Suscríbete para recibir ofertas exclusivas</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Tu email" aria-label="Correo para newsletter">
+          <button type="button" aria-label="Enviar"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

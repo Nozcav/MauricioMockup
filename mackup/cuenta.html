@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arias Shop</title>
+    <!-- Asegúrate de que la ruta a tu CSS sea correcta -->
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+
+    <div class="top-announcement">
+        Envío gratis en compras superiores a $50.000
+    </div>
+
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <img src="img/logo.png" alt="Arias Shop logo">
+                <span>Arias Shop</span>
+            </div>
+        </div>
+        <div class="header-center">
+            <div class="search-bar">
+                <input type="search" placeholder="Buscar productos..." aria-label="Buscar productos">
+                <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <div class="header-right">
+            <a href="carrito.html" class="icon-link">
+                <div class="icon-button" aria-label="Carrito de compras">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </a>
+            <a href="cuenta.html" class="icon-link">
+                <div class="icon-button" aria-label="Usuario">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <!-- CONTENIDO VARIABLE (Aquí cambias todo según la página) -->
+<main class="container cuenta-page">
+  <h1 class="cuenta-titulo">Mi Cuenta</h1>
+
+  <nav class="cuenta-tabs">
+    <button class="tab-btn active"><i class="fas fa-box"></i> Mis Pedidos</button>
+    <button class="tab-btn"><i class="fas fa-user"></i> Perfil</button>
+    <button class="tab-btn"><i class="fas fa-map-marker-alt"></i> Direcciones</button>
+    <button class="tab-btn"><i class="fas fa-cog"></i> Configuración</button>
+  </nav>
+
+  <section class="cuenta-contenido">
+    <div class="cuadro-blanco">
+      <div class="cuenta-header-seccion">
+        <h3>Historial de Pedidos</h3>
+      </div>
+
+      <article class="pedido-item">
+        <div class="pedido-info-principal">
+          <div class="pedido-id-row">
+            <span class="pedido-id">#ORD-2026-001</span>
+            <span class="badge-status transito">En tránsito</span>
+          </div>
+          <p class="pedido-meta">8 de Marzo, 2026</p>
+          <p class="pedido-meta">2 producto(s)</p>
+        </div>
+        
+        <div class="pedido-acciones">
+          <div class="pedido-total-box">
+            <span class="total-label">Total</span>
+            <span class="total-monto">$448.000</span>
+          </div>
+          <a href="#" class="btn-light btn-detalles">Ver Detalles</a>
+        </div>
+      </article>
+
+      <article class="pedido-item">
+        <div class="pedido-info-principal">
+          <div class="pedido-id-row">
+            <span class="pedido-id">#ORD-2026-002</span>
+            <span class="badge-status entregado">Entregado</span>
+          </div>
+          <p class="pedido-meta">1 de Marzo, 2026</p>
+          <p class="pedido-meta">1 producto(s)</p>
+        </div>
+        
+        <div class="pedido-acciones">
+          <div class="pedido-total-box">
+            <span class="total-label">Total</span>
+            <span class="total-monto">$289.000</span>
+          </div>
+          <a href="#" class="btn-light btn-detalles">Ver Detalles</a>
+        </div>
+      </article>
+
+      <article class="pedido-item">
+        <div class="pedido-info-principal">
+          <div class="pedido-id-row">
+            <span class="pedido-id">#ORD-2026-003</span>
+            <span class="badge-status entregado">Entregado</span>
+          </div>
+          <p class="pedido-meta">25 de Febrero, 2026</p>
+          <p class="pedido-meta">1 producto(s)</p>
+        </div>
+        
+        <div class="pedido-acciones">
+          <div class="pedido-total-box">
+            <span class="total-label">Total</span>
+            <span class="total-monto">$159.000</span>
+          </div>
+          <a href="#" class="btn-light btn-detalles">Ver Detalles</a>
+        </div>
+      </article>
+      
+    </div>
+  </section>
+</main>
+
+      <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Sobre Nosotros</h4>
+                <ul>
+                    <li><a href="misionVision.html">Nuestra Historia</a></li>
+                    <li><a href="misionVision.html">Misión y Visión</a></li>
+                    <li><a href="contactanos.html">Trabaja con Nosotros</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Ayuda</h4>
+                <ul>
+                    <li><a href="preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+                    <li><a href="devoluciones.html">Política de Devoluciones</a></li>
+                    <li><a href="contactanos.html">Métodos de Pago</a></li>
+                    <li><a href="contactanos.html">Envíos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p><i class="fa-solid fa-envelope"></i> info@shop.com</p>
+                <p><i class="fa-solid fa-phone"></i> +57 313 217 8424</p>
+                <p><i class="fa-solid fa-clock"></i> Lun - Vie, 9AM - 6PM</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Suscríbete para recibir ofertas exclusivas</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Tu email" aria-label="Tu email">
+                    <button type="button"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
